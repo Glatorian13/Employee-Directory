@@ -4,26 +4,17 @@ import "./style.css";
 export default function SearchBox(props) {
   return (
     <form className="search">
-      <div className="form-group">
+      <div className="form-group search-widget">
         <label htmlFor="empName">Employee Name:</label>
         <input
           onChange={props.handleInputChange}
           value={props.search}
-          name="empName"
-          list="names"
+          name="search"
           type="text"
           className="form-control"
           placeholder='Type Employee Name'
-          id="empName"
+          id="search"
           />
-          <datalist id="names">
-            {props.names.map(empName => (
-              <option value={empName} key={empName}/>
-            ))}
-          </datalist>
-          <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
-            Search
-          </button>
       </div>
     </form>
   );

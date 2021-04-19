@@ -1,4 +1,5 @@
 import React from "react";
+import EmpContainer from "../components/EmpContainer";
 import Jumbo from "../components/Jumbo";
 import SearchBox from "../components/SearchBox";
 //import Container from "../components/Container";
@@ -11,7 +12,8 @@ export default function Home() {
       <Jumbo >
       <h1>Employee Directory</h1>
       <h2>Search Below</h2>
-      <SearchBox>Search</SearchBox>
+      <SearchBox></SearchBox>
+      <EmpContainer></EmpContainer>
       </Jumbo>
     </div>
   )
