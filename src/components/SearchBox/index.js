@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 
-export default function SearchBox(props) {
+const SearchBox = (props) => {
   return (
-    <form className="search">
+    <form>
       <div className="form-group search-widget">
-        <label htmlFor="empName">Employee Name:</label>
+        <div className="input-group mb-3">
         <input
           onChange={props.handleInputChange}
           value={props.search}
@@ -16,6 +16,9 @@ export default function SearchBox(props) {
           id="search"
           />
       </div>
+    </div>  
     </form>
   );
 }
+
+export default SearchBox;
